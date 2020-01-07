@@ -1,5 +1,12 @@
-# AndroidLameEncodeMp3Demo
-
+ # AndroidLameEncodeMp3Demo
+ 
+ /** 一个采用Lame编码器将 pcm文件编码成mp3文件的 Android应用demo **/
+ ////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ /*** 文章对应的csdn 博客地址： https://blog.csdn.net/Mr_ZJC/article/details/103864366 ***/
+ /*** 欢迎关注我的微信公众号“小驰笔记”                                                 ***/
+ 
+ 
  一、什么是Lame
        我们看下Lame官网（https://lame.sourceforge.io/index.php）给的描述
 
@@ -13,7 +20,7 @@
 
 二、为什么要采用Lame
       在Android上开发过录音功能的同学应该知道，在Android上要实现录音功能，有2种方式。一种是采用AudioRecord的方式，AudioRecord录制的直接是原始的pcm数据，另一种方式就是采用MediaRecord，可以录制类似amr、aac格式的文件。
-
+ 
      这里贴下MediaRecord目前支持的录音格式，可以看到目前是不支持mp3的。那这时我们想要编码mp3的文件，就得借助lame来实现了。
 
     public final class AudioEncoder {
